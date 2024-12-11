@@ -3,7 +3,8 @@ from testapp.models import Product
 from django.urls import reverse
 
 
-@pytest.mark.django_db # to use database to test models
+# to use database to test models any test to connect database must use this decorator
+@pytest.mark.django_db 
 def test_create_product():
 
     product = Product.objects.create(name="laptop", price=220.2, stock=3)
