@@ -13,3 +13,6 @@ def test_create_product():
     assert product.price == 220.2
     assert product.stock == 3
 
+@pytest.mark.skip
+def test_add():
+    assert 2 == 2 
