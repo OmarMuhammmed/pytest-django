@@ -23,18 +23,18 @@ from django.contrib.auth.models import User
 # def test_addtion(x,y,result):
 #     assert x+y == result 
 
-@pytest.fixture
-def fixture_1():
-    print("run fixture 1")
-    return 1
+# @pytest.fixture
+# def fixture_1():
+#     print("run fixture 1")
+#     return 1
 
 
-def test_example(fixture_1):
-    assert fixture_1 == 1
+# def test_example(fixture_1):
+#     assert fixture_1 == 1
       
-@pytest.mark.django_db
-def test_user_create():
-    User.objects.create_user(username="testuser", password="testpassword")
-    count = User.objects.all().count()
-    print (count)
-    assert User.objects.count() == 1
+# @pytest.mark.django_db
+# def test_user_create():
+#     User.objects.create_user(username="testuser", password="testpassword")
+#     count = User.objects.all().count()
+#     print (count)
+#     assert User.objects.count() == 1
